@@ -39,9 +39,9 @@
 
       <nav
         id="header"
-        class="w-full container mx-auto z-30 bg-cover bg-fixed top-0"
+        class="w-full container mx-auto z-30 bg-cover bg-fixed top-0 fixed"
         style="
-          background-image: url('pawel-czerwinski-APVgVX_yDDc-unsplash2.jpg');
+          background-image: url('bg/nordwood-themes-R53t-Tg6J4c-unsplash.jpg');
         "
       >
         <div
@@ -49,7 +49,7 @@
         >
           <div class="pl-4 flex items-center">
             <a
-              class="toggleColour flex items-center bg-clip-text text-transparent bg-gradient-to-r from-black via-blue-900 to-blue-900 no-underline hover:no-underline transform hover:scale-100 duration-300 ease-in-out font-bold text-2xl lg:text-4xl"
+              class="nav-element toggleColour flex items-center bg-clip-text text-transparent bg-gradient-to-r from-black via-blue-900 to-blue-900 no-underline hover:no-underline transform hover:scale-100 duration-300 ease-in-out font-bold text-2xl lg:text-4xl"
               href="#"
             >
               ORLANDO LEIJA
@@ -77,7 +77,7 @@
             <ul class="list-reset lg:flex justify-end flex-1 items-center">
               <li class="mr-3">
                 <a
-                  class="inline-block text-black no-underline hover:text-blue-900 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+                  class="nav-element inline-block text-black no-underline hover:text-blue-900 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
                   href="#aboutme"
                   ><strong>ABOUT ME</strong></a
                 >
@@ -85,7 +85,7 @@
 
               <li class="mr-3">
                 <a
-                  class="inline-block text-black no-underline hover:text-blue-900 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+                  class="nav-element inline-block text-black no-underline hover:text-blue-900 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
                   href="#certs"
                   ><strong>CERTS</strong></a
                 >
@@ -93,7 +93,7 @@
 
               <li class="mr-3">
                 <a
-                  class="inline-block text-black no-underline hover:text-blue-900 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+                  class="nav-element inline-block text-black no-underline hover:text-blue-900 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
                   href="#contact"
                   ><strong>CONTACT</strong></a
                 >
@@ -231,10 +231,10 @@
 
         <div
           class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden pt-10 my-20"
+          id="aboutme"
         >
           <h1
-            class="my-4 ml-6 text-3xl md:text-5xl text-black opacity-75 font-extrabold leading-tight text-center md:text-left mt-10"
-            id="aboutme"
+            class="my-4 ml-6 text-3xl md:text-5xl text-black opacity-75 font-extrabold leading-tight text-center md:text-left mt-14"
           >
             <span
               class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-black via-blue-900 to-blue-900"
@@ -316,14 +316,13 @@
           id="certs"
         >
           <h1
-            class="toggleColour ml-6 flex items-center text-center bg-clip-text text-transparent bg-gradient-to-r from-black via-blue-900 to-blue-900 no-underline hover:no-underline transform hover:scale-100 duration-300 ease-in-out font-bold text-2xl lg:text-4xl md:p-10"
+            class="toggleColour ml-6 flex items-center text-center bg-clip-text text-transparent bg-gradient-to-r from-black via-blue-900 to-blue-900 no-underline hover:no-underline transform hover:scale-100 duration-300 ease-in-out font-bold text-2xl lg:text-4xl md:p-10 mt-16"
           >
             Cerfications <br />
             & <br />
             certificates
           </h1>
-          <br />
-          <br />
+
           <ul class="items-center text-center">
             <li>
               <a
@@ -333,7 +332,7 @@
                 <strong>Python3 foundations</strong></a
               >
             </li>
-            <br />
+
             <li>
               <a
                 class="inline-block ml-6 font-extrabold text-black no-underline hover:text-blue-900 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
@@ -342,7 +341,7 @@
                 <strong>CSS3 foundations</strong></a
               >
             </li>
-            <br />
+
             <li>
               <a
                 class="inline-block ml-6 font-extrabold text-black no-underline hover:text-blue-900 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
@@ -351,7 +350,7 @@
                 <strong>HTML5 foundations</strong></a
               >
             </li>
-            <br />
+
             <li>
               <a
                 class="inline-block ml-6 font-extrabold text-black no-underline hover:text-blue-900 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
@@ -360,7 +359,7 @@
                 <strong>JavaScript foundations</strong></a
               >
             </li>
-            <br />
+
             <li>
               <a
                 class="inline-block ml-6 font-extrabold text-black no-underline hover:text-blue-900 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
@@ -369,7 +368,7 @@
                 <strong>PHP7 foundations</strong></a
               >
             </li>
-            <br />
+
             <li>
               <a
                 class="inline-block ml-6 font-extrabold text-black no-underline hover:text-blue-900 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
@@ -391,7 +390,7 @@
 
         <div class="w-full xl:w-3/5 p-12 overflow-hidden">
           <img
-            class="mx-auto w-full md:w-3/5 transform -rotate-6 transition hover:scale-105 duration-700 ease-in-out hover:rotate-6"
+            class="mx-auto w-full md:w-3/5 transform -rotate-6 transition hover:scale-105 duration-700 ease-in-out hover:rotate-6 mt-16"
             src="working-at-home.png"
             alt="working-at-home"
           />
@@ -482,15 +481,15 @@
 
         <div
           class="flex flex-col mt-10 w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden my-16 items-center text-center"
+          id="contact"
         >
           <h1
-            class="toggleColour ml-6 flex items-center text-center bg-clip-text text-transparent bg-gradient-to-r from-black via-blue-900 to-blue-900 no-underline hover:no-underline transform hover:scale-100 duration-300 ease-in-out font-bold text-2xl lg:text-4xl md:ml-16 md:p-10"
-            id="contact"
+            class="toggleColour ml-6 flex items-center text-center bg-clip-text text-transparent bg-gradient-to-r from-black via-blue-900 to-blue-900 no-underline hover:no-underline transform hover:scale-100 duration-300 ease-in-out font-bold text-2xl lg:text-4xl md:ml-16 md:p-10 mt-24"
           >
             CONTACT
           </h1>
           <br />
-          <br />
+
           <ul class="items-center text-center">
             <li>
               <a
@@ -506,7 +505,7 @@
               </a>
             </li>
             <br />
-            <br />
+
             <li>
               <a
                 class="inline-block ml-3 text-blue-300 no-underline hover:text-blue-500 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
@@ -520,7 +519,6 @@
                 />
               </a>
             </li>
-            <br />
             <br />
 
             <li>
@@ -536,7 +534,6 @@
                 />
               </a>
             </li>
-            <br />
             <br />
 
             <li>
@@ -602,8 +599,26 @@
         </div>
       </div>
     </div>
+    <!-- <script>
+      // get element IDs-------------------------------
+      const btn = document.getElementById("nav-toggle");
+      const menu = document.getElementById("nav-content");
 
-    <script>
+      //add event listeners -------------------------------------
+      // btn.addEventListener("click", () => {
+      //   menu.classList.toggle("hidden");
+      // });
+      document.onclick = function (e) {
+        if (e.target.id != "nav-content" && e.target.id != "nav-toggle") {
+          menu.classList.add("hidden");
+        }
+      };
+
+      btn.onclick = function () {
+        menu.classList.toggle("hidden");
+      };
+    </script> -->
+    <!-- <script>
       var scrollpos = window.scrollY;
       var header = document.getElementById("header");
       var navcontent = document.getElementById("nav-content");
@@ -646,14 +661,21 @@
           navcontent.classList.add("bg-gray-100");
         }
       });
-    </script>
+    </script> -->
     <script>
       /*Toggle dropdown list*/
       /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
 
       var navMenuDiv = document.getElementById("nav-content");
       var navMenu = document.getElementById("nav-toggle");
-
+      // var navBar = document.getElementById("header");
+      // var elements = document.getElementById("nav-element");
+      // elements.onclick = function () {
+      //   navBar.classList.add("hidden");
+      // };
+      navMenuDiv.onclick = function () {
+        navMenuDiv.classList.add("hidden");
+      };
       document.onclick = check;
       function check(e) {
         var target = (e && e.target) || (event && event.srcElement);
@@ -674,6 +696,7 @@
           }
         }
       }
+
       function checkParent(t, elm) {
         while (t.parentNode) {
           if (t == elm) {
