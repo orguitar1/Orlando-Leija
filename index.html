@@ -8,15 +8,21 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
 
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
-    />
-    <!--Replace with your tailwind.css once created-->
-    <link
-      href="https://unpkg.com/@tailwindcss/custom-forms/dist/custom-forms.min.css"
-      rel="stylesheet"
-    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              mypink: "#f72585",
+              myblue: "#4895ef",
+              myaqua: "#4cc9f0",
+            },
+          },
+        },
+      };
+    </script>
 
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
@@ -30,35 +36,32 @@
     </style>
   </head>
 
-  <body
-    class="leading-normal tracking-normal text-indigo-400 bg-cover bg-fixed"
-    style="background-image: url('pawel-czerwinski-APVgVX_yDDc-unsplash2.jpg')"
-  >
+  <body class="leading-normal tracking-normal text-gray-100 bg-black font-mono">
     <div class="h-full scroll-smooth">
       <!-- NAVBAR  QUATTRO -->
 
       <nav
         id="header"
-        class="w-full container mx-auto z-30 bg-cover bg-fixed top-0 fixed"
-        style="
-          background-image: url('bg/nordwood-themes-R53t-Tg6J4c-unsplash.jpg');
-        "
+        class="w-full container mx-auto z-30 bg-black top-0 fixed"
       >
         <div
           class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2"
         >
           <div class="pl-4 flex items-center">
             <a
-              class="nav-element toggleColour flex items-center bg-clip-text text-transparent bg-gradient-to-r from-black via-blue-900 to-blue-900 no-underline hover:no-underline transform hover:scale-100 duration-300 ease-in-out font-bold text-2xl lg:text-4xl"
+              class="nav-element toggleColour flex items-center bg-clip-text text-gray-100 opacity-90 no-underline hover:no-underline transform hover:scale-100 duration-300 ease-in-out font-bold text-2xl lg:text-4xl"
               href="#"
             >
-              ORLANDO LEIJA
+              <span
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-gray-100 via-[#4cc9f0] to-[#4895ef]"
+                >Orlando Leija</span
+              >
             </a>
           </div>
           <div class="block lg:hidden pr-4">
             <button
               id="nav-toggle"
-              class="flex items-center p-1 text-blue-900 hover:text-black focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+              class="flex items-center p-1 text-myaqua opacity-90 hover:text-pink-400 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
             >
               <svg
                 class="fill-current h-6 w-6"
@@ -77,7 +80,7 @@
             <ul class="list-reset lg:flex justify-end flex-1 items-center">
               <li class="mr-3">
                 <a
-                  class="nav-element inline-block text-black no-underline hover:text-blue-900 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+                  class="nav-element inline-block text-[#4cc9f0] opacity-90 no-underline hover:text-[#f72585] hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out lg:border-none border-mypink border-b-2 active:border-myaqua hover:border-myaqua hover:opacity-100"
                   href="#aboutme"
                   ><strong>ABOUT ME</strong></a
                 >
@@ -85,7 +88,7 @@
 
               <li class="mr-3">
                 <a
-                  class="nav-element inline-block text-black no-underline hover:text-blue-900 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+                  class="nav-element inline-block text-[#4cc9f0] opacity-90 no-underline hover:text-[#f72585] hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out lg:border-none border-mypink border-b-2 active:border-myaqua hover:border-myaqua hover:opacity-100"
                   href="#certs"
                   ><strong>CERTS</strong></a
                 >
@@ -93,54 +96,23 @@
 
               <li class="mr-3">
                 <a
-                  class="nav-element inline-block text-black no-underline hover:text-blue-900 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+                  class="nav-element inline-block text-[#4cc9f0] opacity-90 no-underline hover:text-[#f72585] hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out lg:border-none border-mypink border-b-2 active:border-myaqua hover:border-myaqua hover:opacity-100"
+                  href="#portfolio"
+                  ><strong>PORTFOLIO</strong></a
+                >
+              </li>
+
+              <li class="mr-3">
+                <a
+                  class="nav-element inline-block text-[#4cc9f0] opacity-90 no-underline hover:text-[#f72585] hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out lg:border-none border-mypink border-b-2 active:border-myaqua hover:border-myaqua hover:opacity-100"
                   href="#contact"
                   ><strong>CONTACT</strong></a
                 >
               </li>
-              <li class="mr-3">
-                <a
-                  class="inline-block text-blue-300 no-underline hover:text-blue-500 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
-                  href="https://www.linkedin.com/in/orlando-leija-moreno-45bb1b167/"
-                >
-                  <img
-                    src="svg/linkedin.svg"
-                    alt="linkedin"
-                    height="24"
-                    width="93"
-                  />
-                </a>
-              </li>
-              <li class="mr-3">
-                <a
-                  class="inline-block text-blue-300 no-underline hover:text-blue-500 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
-                  href="https://my.indeed.com/resume?hl=es&co=MX&from=gnav-homepage&_ga=2.85941209.1330341359.1647628099-1462905002.1647628099"
-                >
-                  <img
-                    src="svg/indeed-logo.svg"
-                    alt="indeed"
-                    height="27"
-                    width="93"
-                  />
-                </a>
-              </li>
-              <li class="mr-3">
-                <a
-                  class="inline-block text-blue-300 no-underline hover:text-blue-500 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
-                  href="https://github.com/orguitar1"
-                >
-                  <img
-                    src="svg/github-icon.svg"
-                    alt="github"
-                    height="37"
-                    width="37"
-                  />
-                </a>
-              </li>
             </ul>
           </div>
         </div>
-        <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
+        <hr class="border-b border-mypink opacity-90 my-0 py-0" />
       </nav>
 
       <!--Main 1--------------------------------------------------------------->
@@ -152,50 +124,71 @@
           class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden"
         >
           <h1
-            class="my-4 ml-6 text-3xl md:text-5xl text-black opacity-75 font-extrabold leading-tight text-center md:text-left"
+            class="my-4 ml-6 text-3xl md:text-5xl text-gray-100 opacity-90 font-extrabold leading-tight text-center md:text-left"
           >
-            Hello,
             <span
-              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-black via-blue-900 to-blue-900"
-            >
-              World!
+              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-gray-100 via-myaqua to-myblue"
+              >Hello, World!
             </span>
 
             <br />
-            i'm a w<span
-              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-black via-blue-900 to-blue-900"
-              >eb designer</span
+            <span
+              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-gray-100 via-myaqua to-myblue"
+              >i'm Orlando</span
             >
           </h1>
+
           <p
-            class="leading-normal ml-6 text-black md:text-2xl mb-8 text-center md:text-left"
+            class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center md:text-left"
           >
-            <strong
-              >Check out my
+            <strong>
               <span
-                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-black via-blue-900 to-blue-900"
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-gray-100 via-myaqua to-myblue"
+                >I am a self taught web designer.</span
               >
-                links <br />
-              </span>
-              so you can see the
+              <br />
+              <br />
+
               <span
-                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-black via-blue-900 to-blue-900"
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-gray-100 via-myaqua to-myblue"
+                >I'm mostly focused on front end</span
               >
-                stuff i've built <br />
-              </span>
-              and have a look at my
+              <br />
+
               <span
-                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-black via-blue-900 to-blue-900"
-                >resume!
-              </span>
-            </strong>
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-gray-100 via-myaqua to-myblue"
+                >- JS, HTML5, CSS3, Bootstrap,</span
+              >
+              <span
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-gray-100 via-myaqua to-myblue"
+                >Tailwindcss</span
+              >
+              <br />
+              <br />
+
+              <span
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-gray-100 via-myaqua to-myblue"
+                >I also know the basics of PHP,</span
+              >
+
+              <span
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-gray-100 via-myaqua to-myblue"
+              >
+                mySQLI, Python3 and manipulating</span
+              >
+
+              <span
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-gray-100 via-myaqua to-myblue"
+                >data bases in phpMyAdmin.</span
+              ></strong
+            >
           </p>
         </div>
 
         <!--Right Col------------------------------------------------------------------->
         <div class="w-full xl:w-3/5 p-12 overflow-hidden">
           <img
-            class="mx-auto w-full md:w-3/5 transform -rotate-6 transition hover:scale-105 duration-700 ease-in-out hover:rotate-6"
+            class="mx-auto w-full md:w-3/5 transform -rotate-6 transition hover:scale-105 duration-700 ease-in-out hover:rotate-6 bg-myaqua opacity-90 rounded-3xl py-1 px-3"
             src="pc.png"
             alt="PC"
           />
@@ -203,7 +196,7 @@
           <a
             href="https://www.flaticon.com/free-icons/computer"
             title="computer icons"
-            class="text-gray-400"
+            class="text-gray-400 opacity-25"
             >Computer icons created by Freepik - Flaticon</a
           >
         </div>
@@ -214,7 +207,7 @@
 
         <div class="w-full xl:w-3/5 p-12 overflow-hidden">
           <img
-            class="mx-auto w-full md:w-3/5 transform -rotate-6 transition hover:scale-105 duration-700 ease-in-out hover:rotate-6"
+            class="mx-auto w-full md:w-3/5 transform -rotate-6 transition hover:scale-105 duration-700 ease-in-out hover:rotate-6 bg-myaqua opacity-90 rounded-full p-1"
             src="computer.png"
             alt="computer"
           />
@@ -222,7 +215,7 @@
           <a
             href="https://www.flaticon.com/free-icons/computer"
             title="computer icons"
-            class="text-gray-400"
+            class="text-gray-400 opacity-25"
             >Computer icons created by monkik - Flaticon</a
           >
         </div>
@@ -234,69 +227,82 @@
           id="aboutme"
         >
           <h1
-            class="my-4 ml-6 text-3xl md:text-5xl text-black opacity-75 font-extrabold leading-tight text-center md:text-left mt-14"
+            class="my-4 ml-6 text-3xl md:text-5xl text-gray-100 opacity-90 font-extrabold leading-tight text-center md:text-left mt-10"
           >
             <span
-              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-black via-blue-900 to-blue-900"
+              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-gray-100 via-myaqua to-myblue"
             >
               I´m ready
             </span>
             <br />
-            to
-            <span
-              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-black via-blue-900 to-blue-900"
-              >work</span
-            >
-            <br />
-            on
-            <span
-              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-black via-blue-900 to-blue-900"
-              >your project!</span
-            >
-            <br />
-            <br />
-            I love
-            <span
-              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-black via-blue-900 to-blue-900"
-              >learning new</span
-            >
 
-            technologies
             <span
-              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-black via-blue-900 to-blue-900"
+              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-gray-100 via-myaqua to-myblue"
+              >to work</span
             >
-              and
-            </span>
-            collaborating wi<span
-              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-black via-blue-900 to-blue-900"
-              >th</span
+            <br />
+
+            <span
+              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-gray-100 via-myaqua to-myblue"
+              >on your project!</span
             >
-            people.
+            <br />
           </h1>
           <br />
           <p
-            class="leading-normal ml-6 text-black md:text-2xl mb-8 text-center md:text-left"
+            class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center md:text-left"
           >
             <strong>
               <span
-                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-black via-blue-900 to-blue-900"
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-gray-100 via-myaqua to-myblue"
+                >I love learning new technologies and</span
+              >
+              <span
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-gray-100 via-myaqua to-myblue"
+                >collaborating with people!</span
+              >
+              <br />
+              <br />
+              <span
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-gray-100 via-myaqua to-myblue"
+                >I can't wait to learn and get</span
+              >
+              <span
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-gray-100 via-myaqua to-myblue"
+                >proficient at whatever language or</span
+              >
+              <span
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-gray-100 via-myaqua to-myblue"
+                >framework your project needs, and</span
+              >
+
+              <span
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-gray-100 via-myaqua to-myblue"
+                >provide value to you wherever i can!</span
+              >
+              <br />
+              <br />
+              <span
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-gray-100 via-myaqua to-myblue"
               >
                 Here´s some of the stuff <br />
               </span>
-              that i ha<span
-                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-black via-blue-900 to-blue-900"
-                >ve made.</span
-              >
-              <br />
-              My certificat<span
-                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-black via-blue-900 to-blue-900"
-                >ions,</span
-              >
-              <br />
-              certificates
+
               <span
-                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-black via-blue-900 to-blue-900"
-                >and resume!</span
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-gray-100 via-myaqua to-myblue"
+                >that i have built.</span
+              >
+              <br />
+
+              <span
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-gray-100 via-myaqua to-myblue"
+                >My certifications,</span
+              >
+              <br />
+
+              <span
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-gray-100 via-myaqua to-myblue"
+                >certificates and resume!</span
               >
             </strong>
           </p>
@@ -316,17 +322,41 @@
           id="certs"
         >
           <h1
-            class="toggleColour ml-6 flex items-center text-center bg-clip-text text-transparent bg-gradient-to-r from-black via-blue-900 to-blue-900 no-underline hover:no-underline transform hover:scale-100 duration-300 ease-in-out font-bold text-2xl lg:text-4xl md:p-10 mt-24"
+            class="my-4 text-3xl md:text-5xl text-gray-100 opacity-90 font-extrabold leading-tight text-center md:text-center md:p-1 mt-24"
           >
-            Cerfications <br />
-            & <br />
-            certificates
+            <span
+              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-gray-100 via-myaqua to-myblue"
+              >Certifications, </span
+            ><br />
+
+            <br />
+            <span
+              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-gray-100 via-myaqua to-myblue"
+              >certificates</span
+            >
+            <br /><span
+              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-gray-100 via-myaqua to-myblue"
+              >&</span
+            >
+            <br />
+            <span
+              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-gray-100 via-myaqua to-myblue"
+              >resume</span
+            >
           </h1>
 
           <ul class="items-center text-center">
             <li>
               <a
-                class="inline-block ml-6 font-extrabold text-black no-underline hover:text-pink-900 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+                class="inline-block ml-6 font-extrabold text-myaqua opacity-90 no-underline hover:text-mypink hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+                href="certs/Orlando - The Complete Cyber Security Course - Volume 1 - Hackers Exposed  Certificate-1.png"
+              >
+                <strong>Resume</strong></a
+              >
+            </li>
+            <li>
+              <a
+                class="inline-block ml-6 font-extrabold text-myaqua opacity-90 no-underline hover:text-mypink hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
                 href="certs/SW_beginners_python_3.png"
               >
                 <strong>Python3 foundations</strong></a
@@ -335,7 +365,7 @@
 
             <li>
               <a
-                class="inline-block ml-6 font-extrabold text-black no-underline hover:text-blue-900 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+                class="inline-block ml-6 font-extrabold text-myaqua opacity-90 no-underline hover:text-mypink hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
                 href="certs/SW_css3_foundations.png"
               >
                 <strong>CSS3 foundations</strong></a
@@ -344,7 +374,7 @@
 
             <li>
               <a
-                class="inline-block ml-6 font-extrabold text-black no-underline hover:text-blue-900 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+                class="inline-block ml-6 font-extrabold text-myaqua opacity-90 no-underline hover:text-mypink hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
                 href="certs/SW_html5_foundations.png"
               >
                 <strong>HTML5 foundations</strong></a
@@ -353,7 +383,7 @@
 
             <li>
               <a
-                class="inline-block ml-6 font-extrabold text-black no-underline hover:text-blue-900 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+                class="inline-block ml-6 font-extrabold text-myaqua opacity-90 no-underline hover:text-mypink hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
                 href="certs/SW_javascript_foundations.png"
               >
                 <strong>JavaScript foundations</strong></a
@@ -362,7 +392,7 @@
 
             <li>
               <a
-                class="inline-block ml-6 font-extrabold text-black no-underline hover:text-blue-900 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+                class="inline-block ml-6 font-extrabold text-myaqua opacity-90 no-underline hover:text-mypink hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
                 href="certs/SW_php_7_foundations.png"
               >
                 <strong>PHP7 foundations</strong></a
@@ -371,7 +401,7 @@
 
             <li>
               <a
-                class="inline-block ml-6 font-extrabold text-black no-underline hover:text-blue-900 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+                class="inline-block ml-6 font-extrabold text-myaqua opacity-90 no-underline hover:text-mypink hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
                 href="certs/Orlando - The Complete Cyber Security Course - Volume 1 - Hackers Exposed  Certificate-1.png"
               >
                 <strong
@@ -391,7 +421,7 @@
 
         <div class="w-full xl:w-3/5 p-12 overflow-hidden">
           <img
-            class="mx-auto w-full md:w-3/5 transform -rotate-6 transition hover:scale-105 duration-700 ease-in-out hover:rotate-6 mt-16"
+            class="mx-auto w-full md:w-3/5 transform -rotate-6 transition hover:scale-105 duration-700 ease-in-out hover:rotate-6 mt-16 bg-myaqua opacity-90 rounded-full p-1"
             src="working-at-home.png"
             alt="working-at-home"
           />
@@ -399,19 +429,19 @@
           <a
             href="https://www.flaticon.com/free-icons/computer"
             title="computer icons"
-            class="text-gray-400"
+            class="text-gray-400 opacity-25"
             >Computer icons created by juicy_fish - Flaticon</a
           >
         </div>
         <br />
 
-        <!-- EMPTY SPACE  ------------------------------------------------>
+        <!-- IMAGE  ------------------------------------------------>
 
         <div
           class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden my-16 p-10"
         >
           <img
-            class="mx-auto w-full md:w-3/5 transform -rotate-6 transition hover:scale-105 duration-700 ease-in-out hover:rotate-6"
+            class="mx-auto w-full md:w-3/5 transform -rotate-6 transition hover:scale-105 duration-700 ease-in-out hover:rotate-6 bg-myaqua opacity-90 rounded-3xl p-1"
             src="website.png"
             alt="website"
           />
@@ -419,7 +449,7 @@
           <a
             href="https://www.flaticon.com/free-icons/computer"
             title="computer icons"
-            class="text-gray-400"
+            class="text-gray-400 opacity-25"
             >Computer icons created by Freepik - Flaticon</a
           >
         </div>
@@ -427,74 +457,211 @@
         <br />
         <br />
 
-        <!-- WEBSITES LIST ------------------------------------------------>
+        <!-- PORTFOLIO ------------------------------------------------>
 
-        <div
-          class="flex flex-col w-full xl:w-2/5 justify-center overflow-y-hidden items-center"
+        <section
+          class="flex flex-col w-full xl:w-2/5 justify-center overflow-y-hidden items-center mt-20 bg-black opacity-90"
+          id="portfolio"
         >
           <h1
-            class="toggleColour ml-6 flex items-center text-center bg-clip-text text-transparent bg-gradient-to-r from-black via-blue-900 to-blue-900 no-underline hover:no-underline transform hover:scale-100 duration-300 ease-in-out font-bold text-2xl lg:text-4xl md:p-10"
+            class="my-4 text-3xl md:text-5xl text-gray-100 opacity-90 font-extrabold leading-tight text-center md:text-center md:p-1 mt-24"
           >
-            A few things i have built, <br />check out my github for more!
+            <span
+              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-gray-100 via-myaqua to-myblue"
+              >A few things i
+            </span>
+            <span
+              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-gray-100 via-myaqua to-myblue"
+            >
+              have built,</span
+            >
+            <br />
+            <span
+              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-gray-100 via-myaqua to-myblue"
+              >check out my</span
+            >
+
+            <span
+              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-gray-100 via-myaqua to-myblue"
+              >github for more!</span
+            >
           </h1>
-          <br />
-          <br />
-          <ul class="justify-center items-center text-center p-10 w-full">
-            <li>
-              <a
-                class="inline-block ml-6 font-extrabold text-black no-underline hover:text-blue-900 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-105 duration-300 ease-in-out"
-                href="https://orguitar1.github.io/Pagina-de-Diogo/"
-                >I built this landing page <br />
-                for a freelance transalator <br />
-                using Bootstrap!</a
-              >
-            </li>
-            <br />
-            <li>
-              <a
-                class="inline-block ml-6 font-extrabold text-black no-underline hover:text-blue-900 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-105 duration-300 ease-in-out"
-                href="https://orguitar1.github.io/Quattro-MaderaStudio/"
-                >I built this landing page <br />
-                for a furniture workshop business <br />
-                using Tailwindcss!</a
-              >
-            </li>
-            <br />
-            <li>
-              <a
-                class="inline-block ml-6 font-extrabold text-black no-underline hover:text-blue-900 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-105 duration-300 ease-in-out"
-                href="https://orguitar1.github.io/OrlandoLeija-old-site/"
-                >I built this simple blog <br />
-                for a writer <br />
-                using Wordpress!</a
-              >
-            </li>
-          </ul>
-        </div>
+          <!-- div container for all portfolio elements -->
+          <div
+            class="grid-col xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-2 max-w-6xl bg-transparent"
+          >
+            <!-- Tile 1 -->
+            <div class="flex flex-col bg-transparent rounded-lg p-4 m-2">
+              <div class="inline-block bg-transparent rounded-lg">
+                <img
+                  src="projects/diogo.png"
+                  alt="landingpage"
+                  class="border-solid border-2 border-mypink opacity-75 rounded-md"
+                />
+              </div>
+              <div class="flex flex-col inline-block">
+                <div class="flex items-center justify-center mt-4">
+                  <a
+                    class="inline-block no-underline text-center h-10 p-2 leading-none rounded mt-3 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+                    href="https://github.com/orguitar1"
+                  >
+                    <img
+                      src="svg/eye-svgrepo-com.svg"
+                      alt="eye"
+                      height="47"
+                      width="47"
+                      class="bg-myaqua rounded-full"
+                    />
+                  </a>
+                  <h4
+                    class="text-xl font-semibold flex items-center justify-center text-myaqua"
+                  >
+                    View live!
+                  </h4>
+
+                  <a
+                    class="inline-block no-underline text-center h-10 p-2 leading-none rounded mt-3 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+                    href="https://github.com/orguitar1"
+                  >
+                    <img
+                      src="svg/github-icon.svg"
+                      alt="eye"
+                      height="47"
+                      width="47"
+                      class="bg-mypink rounded-full p-0"
+                    />
+                  </a>
+                  <h4
+                    class="text-xl font-semibold flex items-center justify-center text-mypink"
+                  >
+                    View code!
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <!-- Tile 2 -->
+            <div class="flex flex-col bg-transparent rounded-lg p-4 m-2">
+              <div class="inline-block bg-gray-400 rounded-lg">
+                <img
+                  src="projects/quattro.png"
+                  alt="landingpage"
+                  class="border-solid border-2 border-mypink opacity-75 rounded-md"
+                />
+              </div>
+              <div class="flex flex-col inline-block">
+                <div class="flex items-center justify-center mt-4">
+                  <a
+                    class="inline-block no-underline text-center h-10 p-2 leading-none rounded mt-3 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+                    href="https://github.com/orguitar1"
+                  >
+                    <img
+                      src="svg/eye-svgrepo-com.svg"
+                      alt="eye"
+                      height="47"
+                      width="47"
+                      class="bg-myaqua rounded-full"
+                    />
+                  </a>
+                  <h4
+                    class="text-xl font-semibold flex items-center justify-center text-myaqua"
+                  >
+                    View live!
+                  </h4>
+
+                  <a
+                    class="inline-block no-underline text-center h-10 p-2 leading-none rounded mt-3 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+                    href="https://github.com/orguitar1"
+                  >
+                    <img
+                      src="svg/github-icon.svg"
+                      alt="eye"
+                      height="47"
+                      width="47"
+                      class="bg-mypink rounded-full p-0"
+                    />
+                  </a>
+                  <h4
+                    class="text-xl font-semibold flex items-center justify-center text-mypink"
+                  >
+                    View code!
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <!-- Tile 3 -->
+            <div class="flex flex-col bg-transparent rounded-lg p-4 m-2">
+              <div class="inline-block bg-gray-400 rounded-lg">
+                <img
+                  src="projects/orlando2.png"
+                  alt="landingpage"
+                  class="border-solid border-2 border-mypink opacity-75 rounded-md"
+                />
+              </div>
+              <div class="flex flex-col inline-block">
+                <div class="flex items-center justify-center mt-4">
+                  <a
+                    class="inline-block no-underline text-center h-10 p-2 leading-none rounded mt-3 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+                    href="https://github.com/orguitar1"
+                  >
+                    <img
+                      src="svg/eye-svgrepo-com.svg"
+                      alt="eye"
+                      height="47"
+                      width="47"
+                      class="bg-myaqua rounded-full"
+                    />
+                  </a>
+                  <h4
+                    class="text-xl font-semibold flex items-center justify-center text-myaqua"
+                  >
+                    View live!
+                  </h4>
+
+                  <a
+                    class="inline-block no-underline text-center h-10 p-2 leading-none rounded mt-3 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+                    href="https://github.com/orguitar1"
+                  >
+                    <img
+                      src="svg/github-icon.svg"
+                      alt="eye"
+                      height="47"
+                      width="47"
+                      class="bg-mypink rounded-full p-0"
+                    />
+                  </a>
+                  <h4
+                    class="text-xl font-semibold flex items-center justify-center text-mypink"
+                  >
+                    View code!
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br /><br /><br />
 
         <!-- CONTACT LINKS---------------------------- -->
 
         <div
-          class="flex flex-col mt-10 w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden my-16 items-center text-center"
+          class="flex flex-col mt-10 w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden items-center text-center"
           id="contact"
         >
           <h1
-            class="toggleColour ml-6 flex items-center text-center bg-clip-text text-transparent bg-gradient-to-r from-black via-blue-900 to-blue-900 no-underline hover:no-underline transform hover:scale-100 duration-300 ease-in-out font-bold text-2xl lg:text-4xl md:ml-16 md:p-10 mt-24"
+            class="my-4 text-3xl md:text-5xl text-gray-100 opacity-90 font-extrabold leading-tight text-center md:text-center md:p-1 mt-24 lg:ml-24"
           >
-            CONTACT
+            <span
+              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-gray-100 via-myaqua to-myblue"
+              >CONTACT</span
+            >
           </h1>
           <br />
 
           <ul class="items-center text-center">
             <li>
               <a
-                class="inline-block ml-6 text-blue-300 no-underline hover:text-blue-500 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+                class="inline-block ml-6 no-underline hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
                 href="https://www.linkedin.com/in/orlando-leija-moreno-45bb1b167/"
               >
                 <img
@@ -502,6 +669,7 @@
                   alt="linkedin"
                   height="24"
                   width="93"
+                  class="bg-myaqua rounded-sm p-1 opacity-75 hover:opacity-100"
                 />
               </a>
             </li>
@@ -515,8 +683,9 @@
                 <img
                   src="svg/indeed-logo.svg"
                   alt="indeed"
-                  height="36"
-                  width="124"
+                  height="26"
+                  width="82"
+                  class="bg-myaqua rounded-sm py-2 opacity-75 hover:opacity-100"
                 />
               </a>
             </li>
@@ -532,6 +701,7 @@
                   alt="github"
                   height="47"
                   width="47"
+                  class="bg-myaqua rounded-full opacity-75 hover:opacity-100"
                 />
               </a>
             </li>
@@ -539,24 +709,23 @@
 
             <li>
               <label
-                class="inline-block ml-6 font-extrabold text-black no-underline hover:text-blue-900 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform"
+                class="inline-block ml-6 font-extrabold text-mypink opacity-90 no-underline hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform"
                 for=""
                 >email:</label
               ><a
-                class="inline-block ml-6 font-extrabold text-black no-underline hover:text-blue-900 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+                class="inline-block ml-6 font-extrabold text-myaqua opacity-75 no-underline hover:opacity-100 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
                 href="mailto:orlando512@hotmail.com"
                 >orlando512@hotmail.com</a
               >
             </li>
             <li>
               <label
-                class="inline-block ml-6 font-extrabold text-black no-underline hover:text-blue-900 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform"
+                class="inline-block ml-6 font-extrabold text-mypink opacity-90 no-underline hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform"
                 for=""
                 >whatsapp:</label
               >
               <p
-                class="inline-block ml-6 font-extrabold text-black no-underline hover:text-blue-900 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
-                href=""
+                class="inline-block ml-6 font-extrabold text-myaqua opacity-75 no-underline hover:opacity-100 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
               >
                 +52 4443 34 41 35
               </p>
@@ -566,11 +735,9 @@
 
         <!-- bbbbbbbbbbbbbbbbbbbbbbbbbb ----------------------------------->
 
-        <!-- <div class="mx-auto md:pt-16">-->
-
         <!--Footer-->
         <div
-          class="w-full sm:flex pt-16 pb-6 text-sm text-center md:text-left fade-in"
+          class="w-full sm:flex pt-16 pb-6 text-sm text-center justify-between md:text-left fade-in"
         >
           <div>
             <a class="text-gray-500 no-underline hover:no-underline" href="#"
@@ -582,98 +749,18 @@
               href="https://www.tailwindtoolbox.com"
               >TailwindToolbox.com</a
             >
-            By the way, i love chocolate chip cookies
-          </div>
-          <div>
-            <a
-              class="inline-block text-blue-300 no-underline hover:text-blue-500 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out fixed bottom-0 right-0 mr-6 mb-6 opacity-30"
-              href="#"
-            >
-              <img
-                src="svg/up-arrow-svgrepo-com.svg"
-                alt="up"
-                height="27"
-                width="27"
-              />
-            </a>
           </div>
         </div>
       </div>
     </div>
-    <!-- <script>
-      // get element IDs-------------------------------
-      const btn = document.getElementById("nav-toggle");
-      const menu = document.getElementById("nav-content");
 
-      //add event listeners -------------------------------------
-      // btn.addEventListener("click", () => {
-      //   menu.classList.toggle("hidden");
-      // });
-      document.onclick = function (e) {
-        if (e.target.id != "nav-content" && e.target.id != "nav-toggle") {
-          menu.classList.add("hidden");
-        }
-      };
-
-      btn.onclick = function () {
-        menu.classList.toggle("hidden");
-      };
-    </script> -->
-    <!-- <script>
-      var scrollpos = window.scrollY;
-      var header = document.getElementById("header");
-      var navcontent = document.getElementById("nav-content");
-      var navaction = document.getElementById("navAction");
-      var brandname = document.getElementById("brandname");
-      var toToggle = document.querySelectorAll(".toggleColour");
-
-      document.addEventListener("scroll", function () {
-        /*Apply classes for slide in bar*/
-        scrollpos = window.scrollY;
-
-        if (scrollpos > 10) {
-          header.classList.add("bg-white");
-          navaction.classList.remove("bg-white");
-          navaction.classList.add("gradient");
-          navaction.classList.remove("text-gray-800");
-          navaction.classList.add("text-white");
-          //Use to switch toggleColour colours
-          for (var i = 0; i < toToggle.length; i++) {
-            toToggle[i].classList.add("text-gray-800");
-            toToggle[i].classList.remove("text-white");
-          }
-          header.classList.add("shadow");
-          navcontent.classList.remove("bg-gray-100");
-          navcontent.classList.add("bg-white");
-        } else {
-          header.classList.remove("bg-white");
-          navaction.classList.remove("gradient");
-          navaction.classList.add("bg-white");
-          navaction.classList.remove("text-white");
-          navaction.classList.add("text-gray-800");
-          //Use to switch toggleColour colours
-          for (var i = 0; i < toToggle.length; i++) {
-            toToggle[i].classList.add("text-white");
-            toToggle[i].classList.remove("text-gray-800");
-          }
-
-          header.classList.remove("shadow");
-          navcontent.classList.remove("bg-white");
-          navcontent.classList.add("bg-gray-100");
-        }
-      });
-    </script> -->
     <script>
       /*Toggle dropdown list*/
       /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
 
       var navMenuDiv = document.getElementById("nav-content");
       var navMenu = document.getElementById("nav-toggle");
-      // var navBar = document.getElementById("header");
-      // var elements = document.getElementById("nav-element");
-      // elements.onclick = function () {
-      //   navBar.classList.add("hidden");
-      // };
+
       navMenuDiv.onclick = function () {
         navMenuDiv.classList.add("hidden");
       };
