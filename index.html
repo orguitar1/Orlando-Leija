@@ -132,13 +132,16 @@
             <span
               class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
             >
-              <strong>></strong>Hello, World!<strong>_</strong>
+              <strong>></strong>Hello, World!
             </span>
 
             <br />
             <span
               class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
               >i'm Orlando</span
+            ><strong
+              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue opacity-100"
+              ><span class="blink">_</span></strong
             >
           </h1>
 
@@ -236,7 +239,7 @@
             <span
               class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
             >
-              I´m ready
+              >I´m ready
             </span>
             <br />
 
@@ -249,6 +252,9 @@
             <span
               class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
               >on your project!</span
+            ><strong
+              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+              ><span class="blink">_</span></strong
             >
             <br />
           </h1>
@@ -330,7 +336,7 @@
           >
             <span
               class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
-              >Certifications, </span
+              >>Certifications, </span
             ><br />
 
             <br />
@@ -346,6 +352,9 @@
             <span
               class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
               >resume</span
+            ><strong
+              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+              ><span class="blink">_</span></strong
             >
           </h1>
 
@@ -472,7 +481,7 @@
           >
             <span
               class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
-              >A few things i
+              >>A few things i
             </span>
             <span
               class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
@@ -488,6 +497,9 @@
             <span
               class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
               >github for more!</span
+            ><strong
+              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+              ><span class="blink">_</span></strong
             >
           </h1>
 
@@ -675,8 +687,11 @@
               <strong
                 ><span
                   class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
-                  >And here's the code for this site!</span
+                  >>And here's the code for this site!</span
                 ></strong
+              ><strong
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+                ><span class="blink">_</span></strong
               >
             </h1>
             <a
@@ -702,11 +717,14 @@
           id="contact"
         >
           <h1
-            class="my-4 justify-items-center text-3xl md:text-5xl text-gray-100 opacity-90 font-extrabold leading-tight text-center md:text-center md:p-1 mt-60 lg:mt-36 lg:ml-24"
+            class="my-4 justify-items-center text-3xl md:text-5xl text-gray-100 opacity-90 font-extrabold leading-tight text-center md:text-center md:p-1 mt-60 lg:mt-20 lg:ml-24"
           >
             <span
               class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
-              >CONTACT</span
+              >>CONTACT</span
+            ><strong
+              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+              ><span class="blink">_</span></strong
             >
           </h1>
           <br />
@@ -715,6 +733,20 @@
             <li>
               <a
                 class="inline-block justify-items-center lg:ml-6 no-underline hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+                href="https://www.linkedin.com/in/orlando-leija-moreno-45bb1b167/"
+              >
+                <img
+                  src="svg/twitter-logo-svgrepo-com.svg"
+                  alt="twitter"
+                  height="47"
+                  width="47"
+                  class="bg-gradient-to-br from-mypink via-myblue to-myaqua rounded-full opacity-75 hover:opacity-100"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                class="inline-block justify-items-center lg:ml-6 no-underline hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out mt-6 md:mt-1"
                 href="https://www.linkedin.com/in/orlando-leija-moreno-45bb1b167/"
               >
                 <img
@@ -829,6 +861,20 @@
       var navMenuDiv = document.getElementById("nav-content");
       var navMenu = document.getElementById("nav-toggle");
 
+      // blink------------------------------------------
+
+      var blink_speed = 500;
+      var t = setInterval(function () {
+        var ele = document.getElementsByClassName("blink");
+
+        for (var i = 0; i < ele.length; i++) {
+          ele[i].style.visibility =
+            ele[i].style.visibility == "hidden" ? "" : "hidden";
+        }
+      }, blink_speed);
+
+      // collapse menu----------------------------------
+
       navMenuDiv.onclick = function () {
         navMenuDiv.classList.add("hidden");
       };
@@ -836,7 +882,7 @@
       function check(e) {
         var target = (e && e.target) || (event && event.srcElement);
 
-        //Nav Menu
+        //Nav Menu-----------------------------------
         if (!checkParent(target, navMenuDiv)) {
           // click NOT on the menu
           if (checkParent(target, navMenu)) {
