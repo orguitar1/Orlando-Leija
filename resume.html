@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Orlando Leija</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              mypink: "#f72585",
+              myblue: "#4895ef",
+              myaqua: "#4cc9f0",
+              mydarkblue: "#4361ee",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+      html {
+        font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+          "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+          "Noto Color Emoji";
+      }
+    </style>
+  </head>
+
+  <body
+    class="leading-normal tracking-normal text-gray-100 bg-black font-mono scroll-smooth"
+  >
+    <div class="h-full scroll-smooth">
+      <!-- NAVBAR  ------------------------------------------->
+
+      <nav
+        id="header"
+        class="w-full container mx-auto z-30 bg-black top-0 fixed"
+      >
+        <div
+          class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2"
+        >
+          <div class="pl-4 flex items-center">
+            <a
+              class="nav-element toggleColour flex items-center bg-clip-text text-gray-100 opacity-90 no-underline hover:no-underline transform hover:scale-100 duration-300 ease-in-out font-bold text-2xl lg:text-4xl"
+              href="#"
+            >
+              <span
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-[#4361ee] via-[#4cc9f0] to-[#4895ef]"
+                >Resume</span
+              >
+            </a>
+          </div>
+          <div class="block lg:hidden pr-4">
+            <button
+              id="nav-toggle"
+              class="flex items-center p-1 text-myaqua opacity-90 hover:text-pink-400 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+            >
+              <svg
+                class="fill-current h-6 w-6"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-cover lg:bg-transparent text-black p-4 lg:p-0 z-20"
+            id="nav-content"
+          >
+            <ul class="list-reset lg:flex justify-end flex-1 items-center">
+              <li class="mr-3">
+                <a
+                  class="nav-element block lg:inline-block text-[#4cc9f0] opacity-90 no-underline hover:text-[#f72585] hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out lg:border-none border-mypink border-b-2 active:border-myaqua hover:border-myaqua hover:opacity-100"
+                  href="index.html"
+                  ><strong>PORTFOLIO SITE</strong></a
+                >
+              </li>
+              <li class="mr-3">
+                <a
+                  class="nav-element block lg:inline-block text-[#4cc9f0] opacity-90 no-underline hover:text-[#f72585] hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out lg:border-none border-mypink border-b-2 active:border-myaqua hover:border-myaqua hover:opacity-100"
+                  href="#whatioffer"
+                  ><strong>WHAT I OFFER</strong></a
+                >
+              </li>
+              <li class="mr-3">
+                <a
+                  class="nav-element block lg:inline-block text-[#4cc9f0] opacity-90 no-underline hover:text-[#f72585] hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out lg:border-none border-mypink border-b-2 active:border-myaqua hover:border-myaqua hover:opacity-100"
+                  href="#workexperince"
+                  ><strong>WORK EXPERIENCE</strong></a
+                >
+              </li>
+              <li class="mr-3">
+                <a
+                  class="nav-element block lg:inline-block text-[#4cc9f0] opacity-90 no-underline hover:text-[#f72585] hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out lg:border-none border-mypink border-b-2 active:border-myaqua hover:border-myaqua hover:opacity-100"
+                  href="#education"
+                  ><strong>EDUCATION</strong></a
+                >
+              </li>
+              <li class="mr-3">
+                <a
+                  class="nav-element block lg:inline-block text-[#4cc9f0] opacity-90 no-underline hover:text-[#f72585] hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out lg:border-none border-mypink border-b-2 active:border-myaqua hover:border-myaqua hover:opacity-100"
+                  href="#skills"
+                  ><strong>SKILLS</strong></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="border-b border-mypink opacity-90 my-0 py-0" />
+      </nav>
+
+      <!--Main 1--------------------------------------------------------------->
+      <div
+        class="container pt-24 md:pt-36 mx-auto flex flex-wrap flex-col md:flex-row items-center"
+      >
+        
+
+         <!-- PHOTO ------------------------------------------->
+
+ 
+ <div class="w-full xl:w-3/5 p-12 overflow-hidden text-center">
+  <h1
+  class="my-4 ml-6 text-3xl md:text-5xl text-gray-100 opacity-90 font-extrabold leading-tight text-center md:text-center"
+>
+  <span
+    class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+  >
+    <strong>></strong>Orlando Leija
+  </span>
+
+  <br />
+  <span
+    class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+    >Web designer</span
+  ><strong
+    class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue opacity-100"
+    ><span class="blink">_</span></strong
+  >
+</h1>
+
+  <img
+  class="mx-auto w-full md:w-3/5 transform  transition hover:scale-105 duration-700 ease-in-out hover:rotate-6  opacity-90 rounded-3xl py-1 px-3 mt-10"
+    src="me.jpg"
+    alt="me"
+  />
+</div>
+        
+
+        
+
+          <!--Right col------------------------------------------------------>
+
+          <div
+          class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden"
+          >
+            
+            <p
+              class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center md:text-left"
+            >
+              <strong>
+                <span
+                  class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+                  >Age: 34 y/o <br /> </span> <br />
+                <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"> Email: <a href="mailto:orlando512@hotmail.com">orlando512@hotmail.com <br /></span> </a> 
+                  <br /> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">Phone: +52-4443-34-41-35</span> 
+                
+                <br /><br>
+                <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">Portfolio (in case you want <br> to copy </span>  <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">the link): <br> <br> <a href="https://orguitar1.github.io/Orlando-Leija/">  </span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"> https://orguitar1.github.<br>io/Orlando-</span><span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">Leija/</span></a>
+                
+  
+                
+  
+                
+              
+            </p>
+          </div>
+      
+
+        <!-- WHAT I OFFER ------------------------------>
+<div class="flex flex-col text-center self-center items-center w-full xl:w-full justify-center lg:items-center overflow-y-hidden pt-10 my-20 mb-96 xl:px-60" id="whatioffer"> 
+  <h1
+            class="my-4 ml-6 text-3xl md:text-5xl text-gray-100 opacity-90 font-extrabold leading-tight text-center md:text-left mt-40" 
+          >
+            <span
+              class="bg-clip-text text-mypink font-extrabold bg-gradient-to-r  "
+            >>What I Offer
+            </span><strong
+              class="bg-clip-text text-mypink font-extrabold bg-gradient-to-r "
+              ><span class="blink">_</span></strong
+            >
+            <br />
+          </h1>
+  <h2 class="my-4 ml-6 text-3xl md:text-5xl text-gray-100 opacity-90 font-extrabold leading-tight text-center md:text-center mt-10">
+    <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">Strong self learning ability, discipline, commitment and the willingness to adapt to whatever your project requires.</span></h2><br><br><h2 class="my-4 ml-6 text-3xl md:text-5xl text-gray-100 opacity-90 font-extrabold leading-tight text-center md:text-center mt-10"><span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">In my portfolio site you will find examples of my work, highlighting my skills.</span></h2>
+<br><br>
+<h2 class="my-4 ml-6 text-3xl md:text-5xl text-gray-100 opacity-90 font-extrabold leading-tight text-center md:text-center mt-10"><span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">I welcome the opportunity to speak to you if you feel like i would be a strong candidate for any position in your organization!</span></h2>
+</div>
+       
+
+        <!-- WORK EXPERIENCE -------------------------------------------------------->
+
+        <div
+          class="flex flex-col w-full xl:w-full justify-center lg:items-start overflow-y-hidden pt-10 my-20 mb-96 mt-60 xl:px-60"
+          id="workexperince"
+        >
+          <h1
+            class="my-4 ml-6 text-3xl md:text-5xl text-gray-100 opacity-90 font-extrabold leading-tight text-center md:text-left mt-40" 
+          >
+            <span
+              class="bg-clip-text text-mypink font-extrabold bg-gradient-to-r  "
+            >>Work Experience
+            </span><strong
+              class="bg-clip-text text-mypink font-extrabold bg-gradient-to-r "
+              ><span class="blink">_</span></strong
+            >
+            <br />
+          </h1>
+          <br />
+
+          <h3 class="my-4 ml-6 text-2xl md:text-4xl text-gray-100 opacity-90 font-extrabold leading-tight text-center md:text-left mt-10"><span
+            class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+            >>Freelance web designer <br /></span>
+           
+            <br />
+            <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">2020 - Present</span></h3>  
+          <p
+            class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center md:text-left"
+          >
+            <strong>
+            
+                
+                <br>
+                <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">I've been learning to code for over a year now, and i have been working with clients to adapt to their needs. I have built a few websites you can checkout over at my portfolio site! <br> <br> I've mainly been learnig about JavaScript, HTML5, CSS3, C, Tailwindcss, Bootstrap, PHP7, Python3, MySQLI and phpMyAdmin.</span>
+                
+              
+              <br />
+              
+            </strong>
+          </p>
+          <br>
+          <br><h3 class="my-4 ml-6 text-2xl md:text-4xl text-gray-100 opacity-90 font-extrabold leading-tight text-center md:text-left mt-10"><span
+            class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+            >>Satellite internet <br> tech support agent <br /></span>
+           
+            <br />
+            <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">2020 - Present</span></h3> 
+          <p
+            class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center md:text-left"
+          >
+            <strong>
+              
+                
+                <br>
+                <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">I've been working as a tech support agent for Hughesnet Satellite Internet through Teleperformance for over a year. <br> <br> Dealing with tons of clientes from different countries every day and helping them reslove their internet performanece issues. It's challenging but fun!</span>
+              
+              <br />
+            </strong>
+          </p>
+          <br>
+          <br>
+          <h3 class="my-4 ml-6 text-2xl md:text-4xl text-gray-100 opacity-90 font-extrabold leading-tight text-center md:text-left mt-10"><span
+            class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+            >>Musician (Guitarrist) <br> at Holland America Line <br>  <br /></span>
+           
+            <br />
+            <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">2017 - 2020</span></h3>
+            <br>
+            <br>
+            <p
+            class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center md:text-left"
+          >
+            <strong>
+              
+                
+                <br>
+                <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">Profesisonal musician performing on cruise ships, in a variety of different music styles and with many different bands and artists. 100% English speaking working enviroment.</span>
+              
+              <br />
+            </strong>
+          </p>
+          
+        </div>
+
+        <!-- NEXT LEVEL----------------------------------------------------------------->
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <!-- EDUCATION ----------------------------------------------------------->
+
+        <div class="flex flex-col w-full xl:w-full justify-center lg:items-start overflow-y-hidden pt-10 my-20 mb-96 xl:px-60 " id="education">
+
+          <h1
+            class="my-4 ml-6 text-3xl md:text-5xl text-gray-100 opacity-90 font-extrabold leading-tight text-center md:text-left mt-40"
+          >
+            <span
+              class="bg-clip-text text-mypink font-extrabold bg-gradient-to-r "
+            >>Education
+            </span><strong
+              class="bg-clip-text text-mypink font-extrabold bg-gradient-to-r "
+              ><span class="blink">_</span></strong
+            >
+            <br />
+            <br>
+          </h1>
+          <p
+            class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center md:text-left"
+          >
+            <strong>
+              
+               <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">CS50: Introduction to Computer Science</span> 
+                <br />
+                <br>
+                <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">Studioweb.com courses on foundations of JavaScript, Python3, PHP7, HTML5, CSS3 and mySQL.
+                </span>
+                <br>
+                <br>
+                <span
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+                >Preparatoria abierta 024 Mexico <br />  <br>
+                <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">The complete cyber security course vol 1 -StationX</span>
+              </span>
+              
+              <br />
+            </strong>
+          </p>
+        </div>
+
+        <br />
+        <br />
+
+        <!-- SKILLS  ---------------------------------------------->
+
+        <div class="flex flex-col w-full xl:w-full justify-center lg:items-start overflow-y-hidden pt-10 my-20 mb-96 mt-60 xl:px-60"
+        id="skills">
+        <h1
+        class="my-4 ml-6 text-3xl md:text-5xl text-gray-100 opacity-90 font-extrabold leading-tight text-center md:text-left mt-40" 
+      >
+        <span
+          class="bg-clip-text text-mypink font-extrabold bg-gradient-to-r  "
+        >>Skills</span><strong
+          class="bg-clip-text text-mypink font-extrabold bg-gradient-to-r "
+          ><span class="blink">_</span></strong
+        >
+        
+      </h1>
+    
+    <ul class="mt-8">
+      <li class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center md:text-left"> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">-Basic knowledge of cybersecurity</span> </li>
+      
+      <li class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center md:text-left"> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">-Spanish - Native speaker (Mexico)</span> </li>
+      <li class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center md:text-left"> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">-English - Advanced (95%)</span> </li>
+      <li class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center md:text-left"> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">-Customer service experience</span> </li>
+      <li class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center md:text-left"> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">-Sales experience</span> </li>
+      <li class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center md:text-left"> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">-Professional musician - over 18 years of experience</span> </li>
+    </ul>
+    </div>
+
+    <!-- REFERENCES ------------------------------------------------->
+
+    <div class="flex flex-col w-full xl:w-full justify-center lg:items-start overflow-y-hidden pt-10 my-20 mb-96 mt-60 xl:px-60"
+    id="skills">
+    <h1
+    class="my-4 ml-6 text-3xl md:text-5xl text-gray-100 opacity-90 font-extrabold leading-tight text-center md:text-left mt-40" 
+  >
+    <span
+      class="bg-clip-text text-mypink font-extrabold bg-gradient-to-r  "
+    >>References</span><strong
+      class="bg-clip-text text-mypink font-extrabold bg-gradient-to-r "
+      ><span class="blink">_</span></strong
+    >
+    
+  </h1>
+
+<ul class="mt-8">
+  
+  
+  <li class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center md:text-left"> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">-Karla Zuñiga, +52 81 2515 0023</span> </li>
+  <li class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center md:text-left"> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">-Ernesto Cheng, +52 81 8161 6373</span> </li>
+  <li class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center md:text-left"> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">-Mike Willox, +33 6 10 68 20 15</span> </li>
+  <li class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center md:text-left"> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">-Dan Bolton, 347-480-1474
+    <br>
+    <a class="inline-block font-extrabold text-myaqua opacity-75 no-underline hover:opacity-100 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out" href="mailto:dan@qualityoverseasmusic.com">dan@qualityoverseasmusic.com</a>
+     
+    </span> </li>
+  
+</ul>
+</div>
+
+       
+       
+        <!-- bbbbbbbbbbbbbbbbbbbbbbbbbb yyyyyyyyyyyy  eeeeeeeeee ----------------------------------->
+
+        <div class="w-full p-12 overflow-hidden text-center">
+          <img
+            class="mx-auto w-2/6 md:w-1/5 lg:w-1/5 xl:w-1/6 transform -rotate-6 transition hover:scale-105 duration-700 ease-in-out hover:rotate-6 bg-gradient-to-br from-myaqua via-myblue to-mypink opacity-90 rounded-br-full rounded-tr-full rounded-tl-full rounded-bl-xl items-center mt-40"
+            src="bye.png"
+            alt="PC"
+          />
+          <br />
+
+          <a
+            href="https://www.flaticon.com/free-icons/bye"
+            title="bye icons"
+            class="text-gray-400 opacity-20"
+            >Bye icons created by Freepik - Flaticon</a
+          >
+        </div>
+
+        <!--Footer-->
+        <div
+          class="inline-block w-full sm:flex pt-16 pb-6 text-sm text-center justify-center md:text-left fade-in"
+        >
+          <h6>
+            <a
+              class="text-myaqua opacity-90 no-underline hover:no-underline text-center justify-center"
+              href="#"
+              >&copy; By the way</a
+            >
+            <span class="text-myblue">- I love</span>
+            <a
+              class="text-mypink opacity-90 no-underline hover:no-underline justify-center text-center"
+              href="https://www.tailwindtoolbox.com"
+              >chocolate chip cookies</a
+            >
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      /*Toggle dropdown list*/
+      /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
+
+      var navMenuDiv = document.getElementById("nav-content");
+      var navMenu = document.getElementById("nav-toggle");
+
+      // blink------------------------------------------
+
+      var blink_speed = 500;
+      var t = setInterval(function () {
+        var ele = document.getElementsByClassName("blink");
+
+        for (var i = 0; i < ele.length; i++) {
+          ele[i].style.visibility =
+            ele[i].style.visibility == "hidden" ? "" : "hidden";
+        }
+      }, blink_speed);
+
+      // collapse menu----------------------------------
+
+      navMenuDiv.onclick = function () {
+        navMenuDiv.classList.add("hidden");
+      };
+      document.onclick = check;
+      function check(e) {
+        var target = (e && e.target) || (event && event.srcElement);
+
+        //Nav Menu-----------------------------------
+        if (!checkParent(target, navMenuDiv)) {
+          // click NOT on the menu
+          if (checkParent(target, navMenu)) {
+            // click on the link
+            if (navMenuDiv.classList.contains("hidden")) {
+              navMenuDiv.classList.remove("hidden");
+            } else {
+              navMenuDiv.classList.add("hidden");
+            }
+          } else {
+            // click both outside link and outside menu, hide menu
+            navMenuDiv.classList.add("hidden");
+          }
+        }
+      }
+
+      function checkParent(t, elm) {
+        while (t.parentNode) {
+          if (t == elm) {
+            return true;
+          }
+          t = t.parentNode;
+        }
+        return false;
+      }
+    </script>
+  </body>
+</html>
