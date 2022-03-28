@@ -15,10 +15,10 @@
         theme: {
           extend: {
             colors: {
-              mypink: "#f72585",
-              myblue: "#4895ef",
-              myaqua: "#4cc9f0",
-              mydarkblue: "#4361ee",
+              matrixblack: "#0D0208",
+              darkgreen: "#03A062",
+              midgreen: "#008F11",
+              lightgreen: "#00FF41",
             },
           },
         },
@@ -35,10 +35,14 @@
           "Noto Color Emoji";
       }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
   </head>
 
   <body
-    class="leading-normal tracking-normal text-gray-100 bg-black font-mono scroll-smooth"
+    class="leading-normal tracking-normal text-gray-100 bg-[#0D0208] scroll-smooth"
+    style="font-family: 'Ubuntu Mono', monospace;"
   >
     <div class="h-full scroll-smooth">
       <!-- NAVBAR  ------------------------------------------->
@@ -56,7 +60,7 @@
               href="#"
             >
               <span
-                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-[#4361ee] via-[#4cc9f0] to-[#4895ef]"
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-midgreen"
                 >Resume</span
               >
             </a>
@@ -64,7 +68,7 @@
           <div class="block lg:hidden pr-4">
             <button
               id="nav-toggle"
-              class="flex items-center p-1 text-myaqua opacity-90 hover:text-pink-400 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+              class="flex items-center p-1 text-darkgreen opacity-90 hover:text-lightgreen focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
             >
               <svg
                 class="fill-current h-6 w-6"
@@ -83,35 +87,35 @@
             <ul class="list-reset lg:flex justify-end flex-1 items-center">
               <li class="mr-3">
                 <a
-                  class="nav-element block lg:inline-block text-[#4cc9f0] opacity-90 no-underline hover:text-[#f72585] hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out lg:border-none border-mypink border-b-2 active:border-myaqua hover:border-myaqua hover:opacity-100"
+                  class="nav-element block lg:inline-block text-darkgreen opacity-90 no-underline hover:text-lightgreen hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out lg:border-none border-darkgreen border-b-2 active:border-lightgreen hover:border-lightgreen hover:opacity-100"
                   href="index.html"
                   ><strong>PORTFOLIO SITE</strong></a
                 >
               </li>
               <li class="mr-3">
                 <a
-                  class="nav-element block lg:inline-block text-[#4cc9f0] opacity-90 no-underline hover:text-[#f72585] hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out lg:border-none border-mypink border-b-2 active:border-myaqua hover:border-myaqua hover:opacity-100"
+                  class="nav-element block lg:inline-block text-darkgreen opacity-90 no-underline hover:text-lightgreen hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out lg:border-none border-darkgreen border-b-2 active:border-lightgreen hover:border-lightgreen hover:opacity-100"
                   href="#whatioffer"
                   ><strong>WHAT I OFFER</strong></a
                 >
               </li>
               <li class="mr-3">
                 <a
-                  class="nav-element block lg:inline-block text-[#4cc9f0] opacity-90 no-underline hover:text-[#f72585] hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out lg:border-none border-mypink border-b-2 active:border-myaqua hover:border-myaqua hover:opacity-100"
+                class="nav-element block lg:inline-block text-darkgreen opacity-90 no-underline hover:text-lightgreen hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out lg:border-none border-darkgreen border-b-2 active:border-lightgreen hover:border-lightgreen hover:opacity-100"
                   href="#workexperince"
                   ><strong>WORK EXPERIENCE</strong></a
                 >
               </li>
               <li class="mr-3">
                 <a
-                  class="nav-element block lg:inline-block text-[#4cc9f0] opacity-90 no-underline hover:text-[#f72585] hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out lg:border-none border-mypink border-b-2 active:border-myaqua hover:border-myaqua hover:opacity-100"
+                class="nav-element block lg:inline-block text-darkgreen opacity-90 no-underline hover:text-lightgreen hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out lg:border-none border-darkgreen border-b-2 active:border-lightgreen hover:border-lightgreen hover:opacity-100"
                   href="#education"
                   ><strong>EDUCATION</strong></a
                 >
               </li>
               <li class="mr-3">
                 <a
-                  class="nav-element block lg:inline-block text-[#4cc9f0] opacity-90 no-underline hover:text-[#f72585] hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out lg:border-none border-mypink border-b-2 active:border-myaqua hover:border-myaqua hover:opacity-100"
+                class="nav-element block lg:inline-block text-darkgreen opacity-90 no-underline hover:text-lightgreen hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out lg:border-none border-darkgreen border-b-2 active:border-lightgreen hover:border-lightgreen hover:opacity-100"
                   href="#skills"
                   ><strong>SKILLS</strong></a
                 >
@@ -119,7 +123,7 @@
             </ul>
           </div>
         </div>
-        <hr class="border-b border-mypink opacity-90 my-0 py-0" />
+        <hr class="border-b border-darkgreen opacity-90 my-0 py-0" />
       </nav>
 
       <!--Main 1--------------------------------------------------------------->
@@ -136,17 +140,17 @@
   class="my-4 ml-6 text-3xl md:text-5xl text-gray-100 opacity-90 font-extrabold leading-tight text-center md:text-center"
 >
   <span
-    class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+    class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"
   >
     <strong>></strong>Orlando Leija
   </span>
 
   <br />
   <span
-    class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+    class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"
     >Front-end developer</span
   ><strong
-    class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue opacity-100"
+    class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen opacity-100"
     ><span class="blink">_</span></strong
   >
 </h1>
@@ -172,14 +176,14 @@
             >
               <strong>
                 <span
-                  class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+                  class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"
                   >Age: 34 y/o <br /> </span> <br />
-                <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"> Email: <a href="mailto:orlando512@hotmail.com">orlando512@hotmail.com <br /></span> </a> 
-                  <br /> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">Phone: +52-4443-34-41-35</span> 
+                <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"> Email: <a href="mailto:orlando512@hotmail.com">orlando512@hotmail.com <br /></span> </a> 
+                  <br /> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">Phone: +52-4443-34-41-35</span> 
                 
                 <br /><br>
-                <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">Portfolio (in case you want <br>  </span> 
-                 <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">to copy the link): </span>  <br> <br> <a href="https://orguitar1.github.io/Orlando-Leija/">  <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"> https://orguitar1.github.<br></span><span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">io/Orlando-Leija/</span></a>
+                <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">Portfolio (in case you want <br>  </span> 
+                 <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">to copy the link): </span>  <br> <br> <a href="https://orguitar1.github.io/Orlando-Leija/">  <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"> https://orguitar1.github.<br></span><span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">io/Orlando-Leija/</span></a>
                 
   
                 
@@ -196,21 +200,21 @@
             class="my-4 ml-6 text-3xl md:text-5xl text-gray-100 opacity-90 font-extrabold leading-tight text-center  mt-20" 
           >
             <span
-              class="bg-clip-text text-mypink font-extrabold bg-gradient-to-r  "
+            class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"
             >>What I Offer</span><strong
-              class="bg-clip-text text-mypink font-extrabold bg-gradient-to-r "
+            class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"
               ><span class="blink">_</span></strong
             >
             <br />
           </h1>
           <br>
   <h2 class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center ">
-    <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">Strong self learning ability, discipline, commitment and </span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"> the willingness to adapt to whatever your project </span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">requires.</span></h2>
+    <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">Strong self learning ability, discipline, commitment and </span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"> the willingness to adapt to whatever your project </span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">requires.</span></h2>
     <br><br>
-    <h2 class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center "><span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">In my portfolio site you will find examples of my work, </span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">highlighting my skills.</span> 
+    <h2 class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center "><span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">In my portfolio site you will find examples of my work, </span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">highlighting my skills.</span> 
     </h2>
 <br><br>
-<h2 class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center "><span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">I welcome the opportunity to speak to you if you feel </span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"> like i would be a strong candidate for any position in </span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"> your organization!</span> </h2>
+<h2 class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center "><span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">I welcome the opportunity to speak to you if you feel </span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"> like i would be a strong candidate for any position in </span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"> your organization!</span> </h2>
 </div>
        
 
@@ -224,9 +228,9 @@
             class="my-4 ml-6 text-3xl md:text-5xl text-gray-100 opacity-90 font-extrabold leading-tight text-center mt-20" 
           >
             <span
-              class="bg-clip-text text-mypink font-extrabold "
+            class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"
             >>Work Experience</span><strong
-              class="bg-clip-text text-mypink font-extrabold "
+            class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"
               ><span class="blink">_</span></strong
             >
             <br />
@@ -234,11 +238,11 @@
           <br />
 
           <h3 class="my-4 ml-6 text-2xl md:text-4xl text-gray-100 opacity-90 font-extrabold leading-tight text-center mt-10"><span
-            class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+            class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"
             >>Freelance web designer <br /></span>
            
             <br />
-            <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">2020 - Present</span></h3>  
+            <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">2020 - Present</span></h3>  
           <p
             class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center"
           >
@@ -246,7 +250,7 @@
             
                 
                 <br>
-                <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">I've been learning to code for over a year now, and i </span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"> have been working with clients to adapt to their needs. I </span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"> have built a few websites you can checkout over at my portfolio site! </span> <br> <br> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"> I've mainly been learnig about JavaScript, HTML5, CSS3, </span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"> C, Tailwindcss, Bootstrap, PHP7, Python3, MySQLI and </span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">phpMyAdmin.</span> 
+                <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">I've been learning to code for over a year now, and i </span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"> have been working with clients to adapt to their needs. I </span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"> have built a few websites you can checkout over at my portfolio site! </span> <br> <br> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"> I've mainly been learnig about JavaScript, HTML5, CSS3, </span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"> C, Tailwindcss, Bootstrap, PHP7, Python3, MySQLI and </span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">phpMyAdmin.</span> 
                 
               
               <br />
@@ -255,11 +259,11 @@
           </p>
           <br>
           <br><h3 class="my-4 ml-6 text-2xl md:text-4xl text-gray-100 opacity-90 font-extrabold leading-tight text-center mt-10"><span
-            class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
-            >>Satellite internet <br> </span><span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">tech support agent</span>  <br />
+            class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"
+            >>Satellite internet <br> </span><span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">tech support agent</span>  <br />
            
             <br />
-            <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">2020 - Present</span></h3> 
+            <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">2020 - Present</span></h3> 
           <p
             class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center"
           >
@@ -267,7 +271,7 @@
               
                 
                 <br>
-                <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">I've been working as a tech support agent for Hughesnet </span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">Satellite Internet through Teleperformance for over a</span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">year.</span>  <br> <br> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">Dealing with tons of clientes from different countries</span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">every day and helping them reslove their internet</span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"> performanece issues. It's challenging but fun! </span>
+                <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">I've been working as a tech support agent for Hughesnet </span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">Satellite Internet through Teleperformance for over a</span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">year.</span>  <br> <br> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">Dealing with tons of clientes from different countries</span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">every day and helping them reslove their internet</span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"> performanece issues. It's challenging but fun! </span>
               
               <br />
             </strong>
@@ -275,11 +279,11 @@
           <br>
           <br>
           <h3 class="my-4 ml-6 text-2xl md:text-4xl text-gray-100 opacity-90 font-extrabold leading-tight text-center mt-10"><span
-            class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
-            >>Musician (Guitarrist) </span> <br> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">at Holland America Line</span>  <br>  <br />
+            class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"
+            >>Musician (Guitarrist) </span> <br> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">at Holland America Line</span>  <br>  <br />
            
             <br />
-            <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">2017 - 2020</span></h3>
+            <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">2017 - 2020</span></h3>
             <br>
             <br>
             <p
@@ -289,7 +293,7 @@
               
                 
                 <br>
-                <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">Profesisonal musician performing on cruise ships, in a </span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"> variety of different music styles and with many different </span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"> bands and artists. 100% English speaking working </span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"> enviroment.</span>
+                <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">Profesisonal musician performing on cruise ships, in a </span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"> variety of different music styles and with many different </span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"> bands and artists. 100% English speaking working </span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"> enviroment.</span>
               
               <br />
             </strong>
@@ -312,9 +316,9 @@
             class="my-4 ml-6 text-3xl md:text-5xl text-gray-100 opacity-90 font-extrabold leading-tight text-center mt-20"
           >
             <span
-              class="bg-clip-text text-mypink font-extrabold bg-gradient-to-r "
+            class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"
             >>Education</span><strong
-              class="bg-clip-text text-mypink font-extrabold bg-gradient-to-r "
+            class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"
               ><span class="blink">_</span></strong
             >
             <br />
@@ -324,18 +328,18 @@
             class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center"
           >
             <strong>
-              <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">Studioweb.com courses and certifications on foundations </span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"> of JavaScript, Python3, PHP7, HTML5, CSS3 and mySQL.</span>
+              <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">Studioweb.com courses and certifications on foundations </span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"> of JavaScript, Python3, PHP7, HTML5, CSS3 and mySQL.</span>
               
               <br>
               <br>
-               <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">CS50: Introduction to Computer Science</span> 
+               <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">CS50: Introduction to Computer Science</span> 
                 <br />
                 <br>
-              <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">The complete cyber security course vol 1 -StationX</span>
+              <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">The complete cyber security course vol 1 -StationX</span>
                <br>
                <br>
                 <span
-                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"
                 >Preparatoria abierta 024 Mexico <br /> 
                 
               </span>
@@ -358,22 +362,22 @@
         class="my-4 ml-6 text-3xl md:text-5xl text-gray-100 opacity-90 font-extrabold leading-tight text-center mt-20" 
       >
         <span
-          class="bg-clip-text text-mypink font-extrabold bg-gradient-to-r  "
+        class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"
         >>Skills</span><strong
-          class="bg-clip-text text-mypink font-extrabold bg-gradient-to-r "
+        class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"
           ><span class="blink">_</span></strong
         >
         
       </h1>
     
     <ul class="mt-8">
-      <li class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center"> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">-Basic knowledge of cybersecurity</span> </li>
+      <li class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center"> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">-Basic knowledge of cybersecurity</span> </li>
       
-      <li class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center"> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">-Spanish - Native speaker (Mexico)</span> </li>
-      <li class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center"> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">-English - Advanced (95%)</span> </li>
-      <li class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center"> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">-Customer service experience</span> </li>
-      <li class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center"> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">-Sales experience</span> </li>
-      <li class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center"> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">-Professional musician - over 18 years of experience</span> </li>
+      <li class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center"> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">-Spanish - Native speaker (Mexico)</span> </li>
+      <li class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center"> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">-English - Advanced (95%)</span> </li>
+      <li class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center"> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">-Customer service experience</span> </li>
+      <li class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center"> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">-Sales experience</span> </li>
+      <li class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center"> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">-Professional musician - over 18 years of experience</span> </li>
     </ul>
     </div>
 
@@ -385,9 +389,9 @@
     class="my-4 ml-6 text-3xl md:text-5xl text-gray-100 opacity-90 font-extrabold leading-tight text-center mt-20" 
   >
     <span
-      class="bg-clip-text text-mypink font-extrabold bg-gradient-to-r  "
+    class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"
     >>References</span><strong
-      class="bg-clip-text text-mypink font-extrabold bg-gradient-to-r "
+    class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"
       ><span class="blink">_</span></strong
     >
     
@@ -396,10 +400,10 @@
 <ul class="mt-8">
   
   
-  <li class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center"> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">-Karla Zuñiga, +52 81 2515 0023</span> </li>
-  <li class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center"> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">-Ernesto Cheng, +52 81 8161 6373</span> </li>
-  <li class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center"> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">-Mike Willox, +33 6 10 68 20 15</span> </li>
-  <li class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center"> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue">-Dan Bolton, 347-480-1474
+  <li class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center"> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">-Karla Zuñiga, +52 81 2515 0023</span> </li>
+  <li class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center"> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">-Ernesto Cheng, +52 81 8161 6373</span> </li>
+  <li class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center"> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">-Mike Willox, +33 6 10 68 20 15</span> </li>
+  <li class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center"> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">-Dan Bolton, 347-480-1474
     <br>
     <a class="inline-block font-extrabold text-myaqua opacity-75 no-underline hover:opacity-100 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out" href="mailto:dan@qualityoverseasmusic.com">dan@qualityoverseasmusic.com</a>
      
@@ -414,7 +418,7 @@
 
         <div class="w-full p-12 overflow-hidden text-center">
           <img
-            class="mx-auto w-2/6 md:w-1/5 lg:w-1/5 xl:w-1/6 transform -rotate-6 transition hover:scale-105 duration-700 ease-in-out hover:rotate-6 bg-gradient-to-br from-myaqua via-myblue to-mypink opacity-90 rounded-br-full rounded-tr-full rounded-tl-full rounded-bl-xl items-center mt-40"
+            class="mx-auto w-2/6 md:w-1/5 lg:w-1/5 xl:w-1/6 transform -rotate-6 transition hover:scale-105 duration-700 ease-in-out hover:rotate-6 bg-gradient-to-br from-darkgreen via-lightgreen to-darkgreen opacity-90 rounded-br-full rounded-tr-full rounded-tl-full rounded-bl-xl items-center mt-40"
             src="bye.png"
             alt="PC"
           />
@@ -436,13 +440,13 @@
         >
           <h6>
             <a
-              class="text-myaqua opacity-90 no-underline hover:no-underline text-center justify-center"
+              class="text-darkgreen opacity-90 no-underline hover:no-underline text-center justify-center"
               href="#"
               >&copy; By the way</a
             >
-            <span class="text-myblue">- I love</span>
+            <span class="text-lightgreen">- I love</span>
             <a
-              class="text-mypink opacity-90 no-underline hover:no-underline justify-center text-center"
+              class="text-darkgreen opacity-90 no-underline hover:no-underline justify-center text-center"
               href="https://www.tailwindtoolbox.com"
               >chocolate chip cookies</a
             >
