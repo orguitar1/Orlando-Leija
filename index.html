@@ -973,6 +973,14 @@
         }
       }, blink_speed);
 
+      // scroll back to top on load ----------------------
+
+
+      window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+
+
       // collapse menu----------------------------------
 
       navMenuDiv.onclick = function () {
