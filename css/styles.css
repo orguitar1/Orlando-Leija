@@ -200,6 +200,7 @@ footer {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.15);
 }
 .heading {
+  font-family: "Permanent Marker", cursive;
   position: relative;
   display: inline-block;
   font-size: 2em;
@@ -218,7 +219,7 @@ footer {
   background: #03273d;
 }
 .background-alt {
-  background: #9e9ef0;
+  background: #fb9039;
 }
 #lead {
   position: relative;
@@ -308,10 +309,10 @@ footer {
   border-bottom: 1px solid #dcd9d9;
 }
 #about h2 {
-  color: #374054;
+  color: #1f3044;
 }
 #about p {
-  color: #74808a;
+  color: #1f3044;
   margin: 0;
 }
 #experience {
@@ -320,7 +321,7 @@ footer {
   border-bottom: 1px solid #dcd9d9;
 }
 #experience h2 {
-  color: #374054;
+  color: #1f3044;
 }
 #experience-timeline {
   margin: 30px auto 0 auto;
@@ -336,7 +337,7 @@ footer {
   right: auto;
   height: 100%;
   width: 3px;
-  background: #3498db;
+  background: #1f3044;
   z-index: 0;
 }
 #experience-timeline:after {
@@ -344,8 +345,8 @@ footer {
   content: "";
   width: 3px;
   height: 40px;
-  background: #3498db;
-  background: linear-gradient(to bottom, #3498db, rgba(52, 152, 219, 0));
+  background: #1f3044;
+  background: linear-gradient(to bottom, #1f3044, rgba(52, 152, 219, 0));
   top: 100%;
   left: 303px;
 }
@@ -360,18 +361,18 @@ footer {
 .vtimeline-content h3 {
   font-size: 1.5em;
   font-weight: 300;
-  color: #374054;
+  color: #1f3044;
   display: inline-block;
   margin: 0;
 }
 .vtimeline-content h4 {
   font-size: 1.2em;
   font-weight: 300;
-  color: #7e8890;
+  color: #1f3044;
   margin: 0 0 15px 0;
 }
 .vtimeline-content p {
-  color: #74808a;
+  color: #1f3044;
   font-size: 0.9em;
   margin: 0;
 }
@@ -386,7 +387,7 @@ footer {
   color: #fff;
   width: 50px;
   height: 50px;
-  background: #3498db;
+  background: #1f3044;
   border-radius: 50%;
   float: left;
   z-index: 99;
@@ -404,7 +405,7 @@ footer {
   left: 0;
   top: 10px;
   font-weight: 300;
-  color: #374054;
+  color: #1f3044;
 }
 #education {
   padding: 50px 15px 20px 15px;
@@ -412,7 +413,7 @@ footer {
   text-align: center;
 }
 #education h2 {
-  color: #374054;
+  color: #1f3044;
   margin-bottom: 50px;
 }
 .education-block {
@@ -429,11 +430,11 @@ footer {
   color: #374054;
 }
 .education-block span {
-  color: #74808a;
+  color: #1f3044;
   float: right;
 }
 .education-block h4 {
-  color: #74808a;
+  color: #1f3044;
   clear: both;
   font-weight: 500;
   margin: 0 0 15px 0;
@@ -441,7 +442,7 @@ footer {
 .education-block p,
 .education-block ul {
   margin: 0;
-  color: #74808a;
+  color: #1f3044;
   font-size: 0.9em;
 }
 .education-block ul {
@@ -453,7 +454,7 @@ footer {
   text-align: center;
 }
 #projects h2 {
-  color: #374054;
+  color: #1f3044;
   margin-bottom: 50px;
 }
 .project {
@@ -477,11 +478,11 @@ footer {
 .project-info h3 {
   font-size: 1.5em;
   font-weight: 300;
-  color: #374054;
+  color: #1f3044;
   margin: 0 0 15px 0;
 }
 .project-info p {
-  color: #74808a;
+  color: #1f3044;
   margin: 0 0 15px 0;
   font-size: 0.9em;
 }
@@ -499,7 +500,7 @@ footer {
   text-align: center;
 }
 #skills h2 {
-  color: #374054;
+  color: #1f3044;
   margin-bottom: 50px;
 }
 #skills ul {
@@ -512,7 +513,7 @@ footer {
   display: inline-block;
   margin: 7px;
   padding: 5px 10px;
-  color: #374054;
+  color: #1f3044;
   background: #e4e4ea;
   list-style: none;
   cursor: default;
@@ -520,7 +521,7 @@ footer {
 }
 #contact {
   padding: 50px 15px;
-  background: #3498db;
+  background: #fb9039;
   text-align: center;
 }
 #contact h2 {
@@ -540,7 +541,7 @@ footer {
   border-radius: 4px;
   border: none;
   margin-bottom: 10px;
-  background: #1d6fa5;
+  background: #646c79;
   color: #fff;
   transition: 0.5s ease all;
 }
@@ -565,7 +566,7 @@ footer {
 #contact-form input:focus,
 #contact-form textarea:focus {
   outline: none;
-  background: #16527a;
+  background: #646c79;
 }
 #contact-form textarea {
   height: 150px;
@@ -578,7 +579,7 @@ footer {
   border-radius: 4px;
   padding: 5px 10px;
   border: none;
-  color: #3498db;
+  color: #fb9039;
   font-weight: 700;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: 0.5s ease all;
@@ -592,7 +593,7 @@ footer {
   border-top: 1px solid #dcd9d9;
 }
 .optional-section h2 {
-  color: #374054;
+  color: #1f3044;
 }
 .optional-section-block {
   max-width: 700px;
@@ -605,10 +606,10 @@ footer {
 .optional-section-block h3 {
   font-weight: 500;
   margin: 0 0 15px 0;
-  color: #374054;
+  color: #1f3044;
 }
 .optional-section-block h4 {
-  color: #74808a;
+  color: #1f3044;
   clear: both;
   font-weight: 500;
   margin: 0 0 15px 0;
@@ -616,7 +617,7 @@ footer {
 .optional-section-block p,
 .optional-section-block ul {
   margin: 0 0 15px 0;
-  color: #74808a;
+  color: #1f3044;
   font-size: 0.9em;
 }
 .optional-section-block ul {
